@@ -1,34 +1,38 @@
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+.App {
+  text-align: center;
 }
 
-body {
-  box-sizing: border-box;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
 
-  margin: 0;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
   min-height: 100vh;
-
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-a,
-a:visited {
-  color: #00d8ff
+.App-link {
+  color: #61dafb;
 }
 
-nav > ul {
-  margin: 0;
-  padding: 16px 32px;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
