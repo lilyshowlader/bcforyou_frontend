@@ -1,0 +1,113 @@
+.heading {
+  background-color: black;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 0px;
+	margin-bottom: 80px;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.subHeading {
+  font-weight: bold;
+}
+
+.bcHeading {
+  font-size: 45px !important;
+}
+
+.reviewHeading {
+  font-size: 45px !important;
+}
+
+.homeButton {
+  padding: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(183, 233, 183);
+  color: black;
+}
+
+.submitButton {
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: orange;
+  margin-left: 650px;
+  margin-top: 5px;
+  color: black;
+}
+
+.endofpage {
+  margin-top: 50px;
+}
+
+
+.textArea {
+  width: 700px;
+  height: 100px
+}
+
+.submitButton:hover img {
+  border: 2px solid rgba(0, 0, 0, .3);
+}
+
+.iudImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+}
+
+@media (min-width: 769px) {
+  .contentContainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .imageContainer {
+    margin-right: 20px;
+    margin-top: -90px;
+  }
+
+  .textContainer {
+    flex-grow: 1;
+    max-width: 400px;
+  }
+
+  .textContainerTwo {
+    max-width: 700px;
+    text-align: left;
+  }
+}
+
+
+/* Media query for screens less than 768px */
+@media (max-width: 768px) {
+  .contentContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .textContainer, .textContainerTwo {
+    width: 350px; 
+  }
+
+  .textArea {
+    width: 350px;
+    height: 100px
+  }
+
+  .submitButton {
+    margin-left: 0; 
+    margin-top: 10px;
+    margin-bottom: 40px; 
+  }
+}
+
+
+
+
